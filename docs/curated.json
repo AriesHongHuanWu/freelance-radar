@@ -1,0 +1,506 @@
+{
+  "jobs": [
+    {
+      "id": "so-frontend",
+      "company": "SO Design Online",
+      "title": "Frontend Developer",
+      "category": "前端／軟體",
+      "screen": "作品集",
+      "pay": "",
+      "hourly": 0,
+      "url": "https://sodesign.online/careers/#open-roles",
+      "note": "寄簡介與公開作品即可申請，支援兼職或專案合作。後續流程未公布。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://sodesign.online/careers/#open-roles"
+    },
+    {
+      "id": "so-ui",
+      "company": "SO Design Online",
+      "title": "UI/UX Web Designer",
+      "category": "UI／產品",
+      "screen": "作品集",
+      "pay": "",
+      "hourly": 0,
+      "url": "https://sodesign.online/careers/",
+      "note": "提供網站界面或 SaaS 作品，遠端專案制。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://sodesign.online/careers/"
+    },
+    {
+      "id": "popfly",
+      "company": "Popfly",
+      "title": "Freelance Video Editors",
+      "category": "影片／音訊",
+      "screen": "作品集",
+      "pay": "",
+      "hourly": 0,
+      "url": "https://www.popfly.com/jobs/video-editors-freelance",
+      "note": "全球遠端。提供既有作品、可工作時間及報價。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://www.popfly.com/jobs/video-editors-freelance"
+    },
+    {
+      "id": "ita-ai",
+      "company": "ITA GROUPE",
+      "title": "AI Developer",
+      "category": "AI／資料",
+      "screen": "作品集",
+      "pay": "",
+      "hourly": 0,
+      "url": "https://www.itagroupe.com/careers/ai-developer",
+      "note": "使用申請表或官方招募信箱，可提供作品連結。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://www.itagroupe.com/careers/ai-developer"
+    },
+    {
+      "id": "ita-ui",
+      "company": "ITA GROUPE",
+      "title": "UI/UX Designer",
+      "category": "UI／產品",
+      "screen": "作品集",
+      "pay": "",
+      "hourly": 0,
+      "url": "https://www.itagroupe.com/careers/ui-ux-designer",
+      "note": "附一至兩個作品，說明問題、過程與自己負責的部分。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://www.itagroupe.com/careers/ui-ux-designer"
+    },
+    {
+      "id": "lionbridge",
+      "company": "Lionbridge",
+      "title": "繁中翻譯品質審查",
+      "category": "AI／資料",
+      "screen": "表單",
+      "pay": "USD 7／小時",
+      "hourly": 7,
+      "url": "https://jobs.eu.lever.co/lionbridge/bdf315bb-8353-40de-9d29-2e0c592dcdae",
+      "note": "台灣繁中譯文判斷，每週約 1–5 小時。表單有圖片驗證。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://jobs.eu.lever.co/lionbridge/bdf315bb-8353-40de-9d29-2e0c592dcdae"
+    },
+    {
+      "id": "dataforce",
+      "company": "DataForce",
+      "title": "Mosaic 軟體品質評估",
+      "category": "前端／軟體",
+      "screen": "表單",
+      "pay": "USD 12／小時",
+      "hourly": 12,
+      "url": "https://dataforcecommunity.transperfect.com/project/mosaic?job-source=DF020",
+      "note": "評估網站、App 與操作流程，偏好每週至少 15 小時。後續篩選未公布。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://dataforcecommunity.transperfect.com/project/mosaic?job-source=DF020"
+    },
+    {
+      "id": "welo-audio",
+      "company": "Welo Data",
+      "title": "國語語音資料錄製",
+      "category": "影片／音訊",
+      "screen": "表單",
+      "pay": "USD 15／小時（按任務）",
+      "hourly": 15,
+      "url": "https://jobs.lever.co/weloglobal/48352502-669d-462e-a436-f77b09c41094",
+      "note": "約需交付 50 分鐘有效錄音。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://jobs.lever.co/weloglobal/48352502-669d-462e-a436-f77b09c41094"
+    },
+    {
+      "id": "welo-network",
+      "company": "Welo Data",
+      "title": "AI Trainers Network（台灣繁中）",
+      "category": "AI／資料",
+      "screen": "未公布",
+      "pay": "",
+      "hourly": 0,
+      "url": "https://jobs.lever.co/weloglobal?location=Taiwan",
+      "note": "人才配對，沒有保證分案。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Other",
+      "source": "官方入口",
+      "sourceUrl": "https://jobs.lever.co/weloglobal?location=Taiwan"
+    },
+    {
+      "id": "welo-ads",
+      "company": "Welo Data",
+      "title": "Mandarin Ads Quality Rater",
+      "category": "AI／資料",
+      "screen": "測驗／試做",
+      "pay": "USD 9／小時（約）",
+      "hourly": 9,
+      "url": "https://jobs.lever.co/weloglobal/c43ab912-0d54-431a-abb4-e9b2c1ca9749",
+      "note": "廣告關聯性評分。先確認測驗、每週工時和相似專案限制。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://jobs.lever.co/weloglobal/c43ab912-0d54-431a-abb4-e9b2c1ca9749"
+    },
+    {
+      "id": "welo-maps",
+      "company": "Welo Data",
+      "title": "Maps Personalization Relevance Rater",
+      "category": "AI／資料",
+      "screen": "未公布",
+      "pay": "",
+      "hourly": 0,
+      "url": "https://jobs.lever.co/weloglobal/a78aee97-c92d-4837-b1da-10c361e4d2de",
+      "note": "需已有符合條件的 Google Maps 使用紀錄。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://jobs.lever.co/weloglobal/a78aee97-c92d-4837-b1da-10c361e4d2de"
+    },
+    {
+      "id": "tsmg-trans",
+      "company": "TSMG",
+      "title": "台灣繁中音訊逐字稿",
+      "category": "AI／資料",
+      "screen": "未公布",
+      "pay": "",
+      "hourly": 0,
+      "url": "https://jobs.lever.co/tsmg/a50a8f63-587f-4053-b2e0-cb0896359874",
+      "note": "依指引轉錄音檔，先確認計酬單位和驗收。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://jobs.lever.co/tsmg/a50a8f63-587f-4053-b2e0-cb0896359874"
+    },
+    {
+      "id": "tsmg-qa",
+      "company": "TSMG",
+      "title": "台灣繁中 AI／ML 品質審查",
+      "category": "AI／資料",
+      "screen": "未公布",
+      "pay": "",
+      "hourly": 0,
+      "url": "https://jobs.lever.co/tsmg/c9382685-c830-4b80-9541-3f7ee4f45f61",
+      "note": "台灣遠端，接案與品質驗收。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://jobs.lever.co/tsmg/c9382685-c830-4b80-9541-3f7ee4f45f61"
+    },
+    {
+      "id": "tsmg-team",
+      "company": "TSMG",
+      "title": "Team Coordinator",
+      "category": "AI／資料",
+      "screen": "未公布",
+      "pay": "",
+      "hourly": 0,
+      "url": "https://jobs.lever.co/tsmg/8630458a-c6c2-4f2f-a707-9801d48ab999",
+      "note": "台灣遠端兼職，偏向協調與跟進。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://jobs.lever.co/tsmg/8630458a-c6c2-4f2f-a707-9801d48ab999"
+    },
+    {
+      "id": "oio-video",
+      "company": "OIO",
+      "title": "Short-form Video Editor",
+      "category": "影片／音訊",
+      "screen": "測驗／試做",
+      "pay": "",
+      "hourly": 0,
+      "url": "https://oio.app/careers/short-form-video-editor",
+      "note": "官方列一次短聊和小型有薪試剪。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://oio.app/careers/short-form-video-editor"
+    },
+    {
+      "id": "oio-full",
+      "company": "OIO",
+      "title": "Full-stack Developer",
+      "category": "前端／軟體",
+      "screen": "未公布",
+      "pay": "",
+      "hourly": 0,
+      "url": "https://oio.app/careers",
+      "note": "Next.js、TypeScript、Supabase、Cloudflare，從公司職缺頁進入。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://oio.app/careers"
+    },
+    {
+      "id": "oio-ui",
+      "company": "OIO",
+      "title": "UI/UX Designer",
+      "category": "UI／產品",
+      "screen": "未公布",
+      "pay": "",
+      "hourly": 0,
+      "url": "https://oio.app/careers",
+      "note": "面向代理商的產品設計，從公司職缺頁進入。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://oio.app/careers"
+    },
+    {
+      "id": "oio-community",
+      "company": "OIO",
+      "title": "Community and Content Creator",
+      "category": "影片／音訊",
+      "screen": "未公布",
+      "pay": "",
+      "hourly": 0,
+      "url": "https://oio.app/careers",
+      "note": "遠端兼職，負責社群內容和回覆。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://oio.app/careers"
+    },
+    {
+      "id": "maas",
+      "company": "MaaS by CodeSM",
+      "title": "Freelance Video Editor",
+      "category": "影片／音訊",
+      "screen": "測驗／試做",
+      "pay": "",
+      "hourly": 0,
+      "url": "https://www.trymaas.com/careers/video-editor/",
+      "note": "全球遠端，職缺頁列有薪技能測驗。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://www.trymaas.com/careers/video-editor/"
+    },
+    {
+      "id": "kreatorflow",
+      "company": "KreatorFlow",
+      "title": "AI Video Editor",
+      "category": "影片／音訊",
+      "screen": "測驗／試做",
+      "pay": "",
+      "hourly": 0,
+      "url": "https://developers.kreatorflow.ai/careers",
+      "note": "免面試，但入選後需試剪一支短片。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://developers.kreatorflow.ai/careers"
+    },
+    {
+      "id": "telus",
+      "company": "TELUS Digital",
+      "title": "Online Data Analyst Taiwan",
+      "category": "AI／資料",
+      "screen": "測驗／試做",
+      "pay": "USD 7.62／小時（估算）",
+      "hourly": 7.62,
+      "url": "https://jobs.telusdigital.com/jobs/18366776-online-data-analyst-taiwan",
+      "note": "有開卷資格考及身分驗證，按件計算。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://jobs.telusdigital.com/jobs/18366776-online-data-analyst-taiwan"
+    },
+    {
+      "id": "rws-search",
+      "company": "RWS TrainAI",
+      "title": "台灣繁中搜尋評估",
+      "category": "AI／資料",
+      "screen": "未公布",
+      "pay": "USD 9／小時",
+      "hourly": 9,
+      "url": "https://jobs.lever.co/rws/f9346cef-6881-4334-ac21-a1ddd3224983/apply",
+      "note": "先確認最低工時、資格審查與同類型案件限制。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://jobs.lever.co/rws/f9346cef-6881-4334-ac21-a1ddd3224983/apply"
+    },
+    {
+      "id": "rws-voice",
+      "company": "RWS TrainAI",
+      "title": "國語對話錄音",
+      "category": "影片／音訊",
+      "screen": "未公布",
+      "pay": "USD 9／小時",
+      "hourly": 9,
+      "url": "https://jobs.lever.co/rws/af4d87c1-6447-4aab-9bec-49dcf6e8e799",
+      "note": "按任務安排短期錄音。先確認申請入口是否仍開放。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://jobs.lever.co/rws/af4d87c1-6447-4aab-9bec-49dcf6e8e799"
+    },
+    {
+      "id": "micro1",
+      "company": "micro1",
+      "title": "OpenSCAD Developer",
+      "category": "3D／CAD",
+      "screen": "測驗／試做",
+      "pay": "USD 65–123／小時",
+      "hourly": 65,
+      "url": "https://jobs.micro1.ai/post/cfe1c7cc-3659-4b39-9c1f-bfe98c2db932",
+      "note": "需 AI 面試及 OpenSCAD 實作，約 48 分鐘。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://jobs.micro1.ai/post/cfe1c7cc-3659-4b39-9c1f-bfe98c2db932"
+    },
+    {
+      "id": "outlier-zh",
+      "company": "Outlier",
+      "title": "台灣繁中 AI 訓練",
+      "category": "AI／資料",
+      "screen": "測驗／試做",
+      "pay": "最高 USD 20／小時",
+      "hourly": 0,
+      "url": "https://outlier.ai/languages/zh-tw",
+      "note": "需技能評估，工作供應依平台配對。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Contractor",
+      "source": "官方入口",
+      "sourceUrl": "https://outlier.ai/languages/zh-tw"
+    },
+    {
+      "id": "prolific",
+      "company": "Prolific",
+      "title": "線上研究參與",
+      "category": "AI／資料",
+      "screen": "表單",
+      "pay": "最低 USD 8／小時（研究估算）",
+      "hourly": 8,
+      "url": "https://www.prolific.com/participants-how-it-works",
+      "note": "零星研究邀請。台灣可加入，通常先排候補及完成身份驗證。",
+      "region": "遠端 · 查原頁條件",
+      "type": "Other",
+      "source": "官方入口",
+      "sourceUrl": "https://www.prolific.com/participants-how-it-works"
+    }
+  ],
+  "sources": [
+    [
+      "Tasker 出任務",
+      "台灣案件",
+      "https://www.tasker.com.tw/cases"
+    ],
+    [
+      "Tasker · AI 與軟體",
+      "台灣 AI、自動化、數據",
+      "https://www.tasker.com.tw/cases?selected_tags=1%2C63%2C89%2C393"
+    ],
+    [
+      "Upwork",
+      "國際提案",
+      "https://www.upwork.com/freelance-jobs/"
+    ],
+    [
+      "Contra",
+      "創意與技術接案",
+      "https://contra.com/opportunities"
+    ],
+    [
+      "Freelancer",
+      "按件提案",
+      "https://www.freelancer.com/jobs/"
+    ],
+    [
+      "PeoplePerHour",
+      "網站與影音接案",
+      "https://www.peopleperhour.com/freelance-jobs"
+    ],
+    [
+      "Workana",
+      "國際接案",
+      "https://www.workana.com/jobs"
+    ],
+    [
+      "Fiverr",
+      "刊登自訂服務",
+      "https://www.fiverr.com/start_selling"
+    ],
+    [
+      "Cake",
+      "台灣遠端兼職",
+      "https://www.cake.me/jobs/Remote/in-Taiwan?job_types=part_time&locale=zh-TW"
+    ],
+    [
+      "Yourator",
+      "台灣新創職缺",
+      "https://www.yourator.co/jobs"
+    ],
+    [
+      "104",
+      "台灣遠端與兼職",
+      "https://www.104.com.tw/jobs/search/"
+    ],
+    [
+      "Himalayas",
+      "國際遠端職缺",
+      "https://himalayas.app/jobs"
+    ],
+    [
+      "OIO",
+      "遠端網站、設計、剪輯",
+      "https://oio.app/careers"
+    ],
+    [
+      "Outlier",
+      "AI 訓練與語言",
+      "https://app.outlier.ai/opportunities"
+    ],
+    [
+      "Mercor",
+      "AI 訓練與領域專案",
+      "https://work.mercor.com/jobs"
+    ],
+    [
+      "micro1",
+      "軟體、設計、CAD",
+      "https://jobs.micro1.ai/"
+    ],
+    [
+      "Welo Data",
+      "台灣資料專案",
+      "https://jobs.lever.co/weloglobal?location=Taiwan"
+    ],
+    [
+      "TSMG",
+      "台灣語音、轉錄、QA",
+      "https://jobs.lever.co/tsmg/?location=Remote+in+Taiwan"
+    ],
+    [
+      "DataForce",
+      "資料採集與品質評估",
+      "https://dataforcecommunity.transperfect.com/"
+    ],
+    [
+      "Lionbridge",
+      "台灣語言專案",
+      "https://jobs.eu.lever.co/lionbridge/?location=Taiwan"
+    ],
+    [
+      "Braintrust",
+      "技術與 AI 合作",
+      "https://www.usebraintrust.com/talent"
+    ],
+    [
+      "Prolific",
+      "線上研究參與",
+      "https://www.prolific.com/participants-how-it-works"
+    ]
+  ]
+}

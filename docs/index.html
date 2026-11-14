@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="搜尋台灣可做的遠端接案，追蹤申請、費率和下一步。">
+<title>接案雷達</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="top"><div class="wrap top-inner">
+<a class="brand" href="./" aria-label="接案雷達首頁"><span class="mark" aria-hidden="true">↗</span> 接案雷達</a>
+<nav aria-label="主要功能"><a href="#opportunities">搜尋接案</a><a href="#sources">平台入口</a></nav>
+</div></header>
+<main class="wrap">
+<section class="hero" aria-labelledby="title">
+<div><p class="updated" id="updated">正在讀取職缺</p><h1 id="title">找到下一個接案。</h1><p class="intro">從台灣出發，搜尋遠端專案、兼職與 AI 任務。</p></div>
+<div class="stats" aria-label="案件統計">
+<div><strong id="total">—</strong><span>收錄機會</span></div><div><strong id="fresh">—</strong><span>近 7 天更新</span></div><div><strong id="tracked">—</strong><span>我的追蹤</span></div>
+</div>
+</section>
+<section id="opportunities" aria-labelledby="opportunities-title">
+<div class="section-title"><h2 id="opportunities-title">案件列表</h2><div class="tools"><button type="button" id="export">匯出追蹤</button><label class="button" for="import">匯入</label><input type="file" id="import" accept="application/json,.json"></div></div>
+<div class="filters">
+<label class="search">搜尋<input id="search" type="search" placeholder="職缺、公司或關鍵字"></label>
+<label>領域<select id="category"><option value="">全部領域</option></select></label>
+<label>申請方式<select id="screen"><option value="">全部</option><option>作品集</option><option>表單</option><option>測驗／試做</option><option>未公布</option></select></label>
+<label>排序<select id="sort"><option value="fit">作品集與表單優先</option><option value="recent">最近更新</option><option value="pay">美元時薪</option></select></label>
+</div>
+<div class="listbar">
+<div class="modes" aria-label="顯示範圍"><button type="button" data-mode="all" aria-pressed="true">全部案件</button><button type="button" data-mode="tracked" aria-pressed="false">我的追蹤</button><button type="button" data-mode="due" aria-pressed="false">待跟進</button></div>
+<label class="check"><input type="checkbox" id="pay-filter"> USD 30+／小時</label>
+</div>
+<p id="summary" class="muted" aria-live="polite"></p>
+<div id="jobs" class="jobs"></div>
+<button id="more" type="button" hidden>顯示更多</button>
+</section>
+<section id="sources" aria-labelledby="sources-title">
+<h2 id="sources-title">平台入口</h2><div id="source-list" class="source-list"></div>
+</section>
+</main>
+<footer class="wrap">追蹤資料只儲存在此瀏覽器，可匯出備份。資格、報酬與招募狀態以原公告為準。</footer>
+<dialog id="track-dialog">
+<form id="track-form">
+<div class="section-title"><h2 id="track-title">追蹤案件</h2><button id="close-track" type="button" aria-label="關閉">×</button></div>
+<label>狀態<select id="track-status"><option>想投遞</option><option>已投遞</option><option>面試中</option><option>已接案</option><option>已結束</option></select></label>
+<label>下次跟進<input type="date" id="track-date"></label>
+<label>備註<textarea id="track-note" rows="4" maxlength="2000" placeholder="例如：確認可用作品集替代試做"></textarea></label>
+<div class="dialog-actions"><button type="button" id="remove">移除追蹤</button><button class="primary" type="submit">儲存</button></div>
+</form>
+</dialog>
+</body>
+</html>
