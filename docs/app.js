@@ -51,7 +51,7 @@ function sanitize(input) {
       date: typeof value.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value.date) ? value.date : '',
       note: typeof value.note === 'string' ? value.note.slice(0, 2000) : '',
       job: {id, title: job.title.slice(0,300), company: job.company.slice(0,200), url: job.url,
-            category: categories.includes(job.category) ? job.category : '', screen: '未公布'},
+            category: categories.includes(job.category) ? job.category : '', screen: '未公布', custom: job.custom === true},
     };
   }
   return result;
@@ -112,7 +112,9 @@ function render() {
   const visible = new Map(current.map(job => [job.id, job]));
   if (mode !== 'all') {
     for (const record of Object.values(tracking)) {
-      if (!visible.has(record.job.id)) visible.set(record.job.id, {...record.job, note:'原來源目前未列此案。'});
+      if (!visible.has(record.job.id)) {
+        visible.set(record.job.id, {...record.job, note:record.job.custom ? '自訂案件' : '原來源目前未列此案。'});
+      }
     }
   }
   const items = [...visible.values()].filter(job => {
@@ -138,8 +140,17 @@ function render() {
 
 function openTrack(job) {
   activeJob = job;
-  const record = tracking[job.id];
-  get('track-title').textContent = job.title;
+  const record = job && tracking[job.id];
+  get('track-title').textContent = job?.title || '新增自訂案件';
+  const custom = !job || job.custom;
+  get('custom-fields').hidden = !custom;
+  for (const field of ['title','company','url']) {
+    const control = get('custom-' + field);
+    control.disabled = !custom;
+    control.required = !!custom;
+    control.value = custom ? job?.[field] || '' : '';
+    control.setCustomValidity('');
+  }
   get('track-status').value = record?.status || '想投遞';
   get('track-date').value = record?.date || '';
   get('track-note').value = record?.note || '';
@@ -149,12 +160,25 @@ function openTrack(job) {
 
 get('track-form').addEventListener('submit', event => {
   event.preventDefault();
-  const {id,title,company,url,category} = activeJob;
+  const urlField = get('custom-url');
+  const custom = !activeJob || activeJob.custom;
+  if (custom && !safeUrl(urlField.value.trim())) {
+    urlField.setCustomValidity('請輸入 HTTPS 連結。');
+    urlField.reportValidity();
+    return;
+  }
+  const job = custom ? {id:activeJob?.id || 'custom:' + crypto.randomUUID(), title:get('custom-title').value.trim(),
+                        company:get('custom-company').value.trim(), url:urlField.value.trim(),
+                        category:'', screen:'未公布', custom:true} : activeJob;
+  const {id,title,company,url,category} = job;
   tracking[id] = {status:get('track-status').value, date:get('track-date').value, note:get('track-note').value,
-                  job:{id,title,company,url,category,screen:'未公布'}};
+                  job:{id,title,company,url,category,screen:'未公布',custom:!!custom}};
   get('track-dialog').close();
+  if (custom && mode !== 'tracked') get('opportunities').querySelector('[data-mode="tracked"]').click();
   save();
 });
+get('custom-url').addEventListener('input', event => event.target.setCustomValidity(''));
+get('add-job').addEventListener('click', () => openTrack());
 get('remove').addEventListener('click', () => {
   delete tracking[activeJob.id];
   get('track-dialog').close();
