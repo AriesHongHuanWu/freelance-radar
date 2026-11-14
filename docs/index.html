@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="搜尋台灣可做的遠端接案，追蹤申請、費率和下一步。">
 <title>接案雷達</title>
-<link rel="stylesheet" href="style.css?v=2">
-<script type="module" src="app.js?v=2"></script>
+<link rel="stylesheet" href="style.css?v=3">
+<script type="module" src="app.js?v=3"></script>
 </head>
 <body>
 <header class="top"><div class="wrap top-inner">
@@ -15,7 +15,7 @@
 </div></header>
 <main class="wrap">
 <section class="hero" aria-labelledby="title">
-<div><p class="updated" id="updated">正在讀取職缺</p><h1 id="title">找到下一個接案。</h1><p class="intro">從台灣出發，搜尋遠端專案、兼職與 AI 任務。</p></div>
+<div><p class="updated" id="updated">正在讀取案件</p><h1 id="title">找到下一個接案。</h1><p class="intro">看案主需求、找遠端合作，追蹤每一次提案。</p></div>
 <div class="stats" aria-label="案件統計">
 <div><strong id="total">—</strong><span>收錄機會</span></div><div><strong id="fresh">—</strong><span>近 7 天更新</span></div><div><strong id="tracked">—</strong><span>我的追蹤</span></div>
 </div>
@@ -25,15 +25,16 @@
 <div class="filters">
 <label class="search">搜尋<input id="search" type="search" placeholder="職缺、公司或關鍵字"></label>
 <label>領域<select id="category"><option value="">全部領域</option></select></label>
-<label>申請方式<select id="screen"><option value="">全部</option><option>作品集</option><option>表單</option><option>測驗／試做</option><option>未公布</option></select></label>
+<label>申請方式<select id="screen"><option value="">全部</option><option>提案</option><option>作品集</option><option>表單</option><option>測驗／試做</option><option>未公布</option></select></label>
 <label>排序<select id="sort"><option value="fit">作品集與表單優先</option><option value="recent">最近更新</option><option value="pay">美元時薪</option></select></label>
 </div>
 <div class="listbar">
-<div class="modes" aria-label="顯示範圍"><button type="button" data-mode="all" aria-pressed="true">全部案件</button><button type="button" data-mode="tracked" aria-pressed="false">我的追蹤</button><button type="button" data-mode="due" aria-pressed="false">待跟進</button></div>
+<div class="modes" aria-label="顯示範圍"><button type="button" data-mode="projects" aria-pressed="true">單次委託</button><button type="button" data-mode="all" aria-pressed="false">全部案件</button><button type="button" data-mode="tracked" aria-pressed="false">我的追蹤</button><button type="button" data-mode="due" aria-pressed="false">待跟進</button></div>
 <label class="check"><input type="checkbox" id="pay-filter"> USD 30+／小時</label>
 </div>
 <p id="summary" class="muted" aria-live="polite"></p>
 <div id="jobs" class="jobs"></div>
+<div id="project-sources" class="source-list" hidden></div>
 <button id="more" type="button" hidden>顯示更多</button>
 </section>
 <section id="sources" aria-labelledby="sources-title">

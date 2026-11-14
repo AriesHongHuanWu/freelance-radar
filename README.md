@@ -6,3 +6,5 @@ The checked-in feed is the initial snapshot. GitHub Actions refreshes the publis
 
 Local preview: `python -m http.server 8765 --directory docs`. Refresh the local data: `python scripts/refresh.py`.
 
+The default single-project view uses manually reviewed `docs/projects.json` entries. Its expiry timestamps are conservative review cutoffs because source pages may only show relative time remaining. The direct marketplace searches stay available after those entries age out. Scheduled refreshes update the Himalayas feed.
+

@@ -1,8 +1,18 @@
 const get = (id) => document.getElementById(id);
 const categories = ['AI／資料', '前端／軟體', '影片／音訊', 'UI／產品', '3D／CAD'];
 const statuses = ['想投遞', '已投遞', '面試中', '已接案', '已結束'];
-const types = { Contractor: '接案', 'Part Time': '兼職', Temporary: '短期', Intern: '實習', Other: '任務／人才庫' };
-const rank = { 作品集: 0, 表單: 1, 未公布: 2, '測驗／試做': 3 };
+const types = { Project: '單次委託', Contractor: '接案', 'Part Time': '兼職', Temporary: '短期', Intern: '實習', Other: '任務／人才庫' };
+const rank = { 提案: 0, 作品集: 0, 表單: 1, 未公布: 2, '測驗／試做': 3 };
+const projectSources = [
+  ['Tasker 剪輯與字幕', '台灣案主 · 看可遠端標記', 'https://www.tasker.com.tw/cases?selected_tags=382%2C46%2C372%2C94'],
+  ['Tasker 軟體與 AI', '台灣案主 · 網站及自動化', 'https://www.tasker.com.tw/cases?selected_tags=1%2C63%2C89%2C393'],
+  ['Freelancer 影音', '國際案主 · 可篩固定價', 'https://www.freelancer.com/jobs/video-editing/'],
+  ['Freelancer 單頁網站', '國際案主 · 可篩固定價', 'https://www.freelancer.com/jobs/landing-pages/'],
+  ['Freelancer Python', '國際案主 · 資料及自動化', 'https://www.freelancer.com/jobs/python/'],
+  ['Freelancer 3D 建模', '國際案主 · CAD 與 3D 檔', 'https://www.freelancer.com/jobs/3d-modelling/'],
+  ['Upwork Next.js', '國際案主 · 選 Fixed-price', 'https://www.upwork.com/freelance-jobs/next-js/'],
+  ['Upwork 腳本與工具', '國際案主 · 選 Fixed-price', 'https://www.upwork.com/freelance-jobs/scripts-and-utilities/'],
+];
 const storageKey = 'freelance-radar:tracking:v1';
 const taipeiDate = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Asia/Taipei' });
 const dateTime = new Intl.DateTimeFormat('zh-TW', {timeZone:'Asia/Taipei', dateStyle:'medium', timeStyle:'short'});
@@ -10,7 +20,7 @@ const filters = ['search', 'category', 'screen', 'sort', 'pay-filter'];
 const pageSize = 24;
 let jobs = [];
 let tracking = {};
-let mode = 'all';
+let mode = 'projects';
 let limit = pageSize;
 let activeJob;
 let storageFailed = false;
@@ -96,6 +106,7 @@ function jobCard(job) {
   if (job.source === 'Himalayas' && safeUrl(job.sourceUrl)) actions.append(link('Himalayas', job.sourceUrl, 'source-link'));
   article.append(meta, element('h3',title), chips, element('div', job.pay || '費率未公布', 'pay'));
   if (job.note) article.append(element('p', job.note, 'note'));
+  if (job.verified) article.append(element('p', '最近核對 ' + job.verified + ' · 截止以原頁為準', 'note'));
   if (record?.date) article.append(element('p', '跟進 ' + record.date, 'note'));
   article.append(actions);
   return article;
@@ -119,7 +130,9 @@ function render() {
   }
   const items = [...visible.values()].filter(job => {
     const record = tracking[job.id];
-    return (mode === 'all' || (mode === 'due' ? isDue(record) : record)) &&
+    const inScope = mode === 'all' || (mode === 'projects' && job.type === 'Project') ||
+      (mode === 'tracked' && record) || (mode === 'due' && isDue(record));
+    return inScope &&
       (!q || [job.title, job.company, job.category, job.note, record?.note].filter(Boolean).join(' ').toLowerCase().includes(q)) &&
       (!category || job.category === category) && (!screen || job.screen === screen) && (!pay || job.hourly >= 30);
   });
@@ -127,15 +140,17 @@ function render() {
     const recent = (b.posted || 0) - (a.posted || 0);
     if (sort === 'recent') return recent;
     if (sort === 'pay') return (b.hourly || 0) - (a.hourly || 0) || recent;
-    return rank[a.screen] - rank[b.screen] || recent;
+    return rank[a.screen] - rank[b.screen] || (a.priority ?? 100) - (b.priority ?? 100) || recent;
   });
   get('total').textContent = current.length;
   get('fresh').textContent = current.filter(job => job.posted && now - job.posted <= 604800).length;
   get('tracked').textContent = Object.keys(tracking).length;
   get('summary').textContent = '符合 ' + items.length + ' 筆' + (storageFailed ? ' · 瀏覽器無法寫入，請匯出備份' : '');
   get('jobs').replaceChildren(...(items.length ? items.slice(0,limit).map(jobCard) :
-    [element('div',mode === 'all' ? '沒有符合目前條件的案件。' : '目前沒有符合條件的追蹤案件。','empty')]));
+    [element('div', mode === 'projects' ? '沒有符合條件的單次委託，可到下方平台查看新案。' :
+      mode === 'all' ? '沒有符合目前條件的案件。' : '目前沒有符合條件的追蹤案件。','empty')]));
   get('more').hidden = items.length <= limit;
+  get('project-sources').hidden = mode !== 'projects';
 }
 
 function openTrack(job) {
@@ -229,9 +244,11 @@ async function readJson(path) {
   return response.json();
 }
 
-const [manual, feed] = await Promise.allSettled([readJson('./curated.json'), readJson('./feed.json')]);
+const [manual, feed, projects] = await Promise.allSettled([
+  readJson('./curated.json'), readJson('./feed.json'), readJson('./projects.json'),
+]);
 const pool = new Map();
-for (const dataset of [manual, feed]) {
+for (const dataset of [projects, manual, feed]) {
   if (dataset.status !== 'fulfilled') continue;
   for (const job of dataset.value.jobs) {
     if (!safeUrl(job.url)) continue;
@@ -240,13 +257,15 @@ for (const dataset of [manual, feed]) {
   }
 }
 jobs = [...pool.values()];
-if (manual.status === 'fulfilled') {
-  get('source-list').replaceChildren(...manual.value.sources.map(([name,note,url]) => {
+function renderSources(id, entries) {
+  get(id).replaceChildren(...entries.map(([name,note,url]) => {
     const anchor = link(name + ' ↗',url);
     anchor.append(element('small',note));
     return anchor;
   }));
 }
+renderSources('project-sources', projectSources);
+if (manual.status === 'fulfilled') renderSources('source-list', manual.value.sources);
 get('updated').textContent = feed.status === 'fulfilled' ? '遠端清單更新 ' + dateTime.format(new Date(feed.value.updated)) :
   '自動清單暫時無法載入';
 render();
