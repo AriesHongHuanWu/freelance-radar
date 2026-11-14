@@ -25,7 +25,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Refresh listings
-        if: github.event_name != 'push'
         run: python3 scripts/refresh.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
