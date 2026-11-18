@@ -1,6 +1,22 @@
 {
   "jobs": [
     {
+      "id": "fl-40816940",
+      "title": "兩支 30 秒 Reels 付費試剪",
+      "category": "影片／音訊",
+      "pay": "US$30–250／公告預算",
+      "note": "先談兩支付費試剪的固定總價。案主供素材及品牌規範，交 1080×1920 MP4、內嵌字幕和 SRT，工作檔視可用性。11/18 中午登入核對，頁面顯示約剩 2 天 13 小時。固定價成交費 10% 或 US$5 取較高者。",
+      "url": "https://www.freelancer.com/projects/motion-graphics/video-editor-needed-motion-graphics",
+      "priority": 1,
+      "expires": 1795186800,
+      "type": "Project",
+      "source": "Freelancer",
+      "company": "Freelancer",
+      "screen": "提案",
+      "region": "遠端",
+      "verified": "2026-11-18"
+    },
+    {
       "id": "fl-39647914",
       "title": "拆分 3D 列印 STL 並修改底部開口",
       "category": "3D／CAD",
@@ -213,16 +229,16 @@
       "title": "文字資料格式轉換",
       "category": "前端／軟體",
       "pay": "USD 750–1,500／案",
-      "note": "交轉換後檔案和可重跑說明。案主會在開工後提供精確規格，報價前可先問樣本、格式、筆數和例外規則。",
+      "note": "案主交原始資料及目標格式，交付轉換檔和重跑說明，並回報資料異常。先看去識別樣本、檔量及目標規格再報價。11/18 中午登入核對，頁面顯示約剩 1 天 12 小時。此案投標需至少 US$20 帳戶餘額，固定價成交費為 10% 或 US$5 取較高者。",
       "url": "https://www.freelancer.com/projects/scripting/text-data-format-conversion",
-      "priority": 4,
+      "priority": 1,
       "type": "Project",
       "company": "Freelancer",
       "source": "Freelancer",
       "screen": "提案",
       "region": "遠端",
-      "expires": 1794931200,
-      "verified": "2026-11-15"
+      "expires": 1795100400,
+      "verified": "2026-11-18"
     },
     {
       "id": "fl-landing-clean",
