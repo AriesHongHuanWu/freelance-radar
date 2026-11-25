@@ -1,6 +1,38 @@
 {
   "jobs": [
     {
+      "id": "tasker-TK26112422CVNV56",
+      "title": "三支綜藝風 Reels 剪輯",
+      "category": "影片／音訊",
+      "pay": "NT$8,000／三支",
+      "note": "案主供分類素材與風格參考，剪三支各約 90 秒的 Reels，交期一週內。可先確認素材總長、字幕規格及修改輪次。若能控制在 7–9 小時，案款約 NT$889–1,143／小時，未計提案成本。11/25 原頁仍顯示搶先提案，須登入並有 TaskerGo 額度。該案最低額度及提案截止未核實，一週是交件要求。",
+      "url": "https://www.tasker.com.tw/cases/TK26112422CVNV56",
+      "priority": 1,
+      "type": "Project",
+      "source": "Tasker",
+      "company": "Tasker",
+      "screen": "提案",
+      "region": "台灣可遠端",
+      "verified": "2026-11-25",
+      "expires": 1795741200
+    },
+    {
+      "id": "tasker-TK26112508VUEL06",
+      "title": "1shop 伴手禮網站視覺改版",
+      "category": "UI／產品",
+      "pay": "NT$10,000／案",
+      "note": "沿用現有 1shop，調整首頁 Banner、商品介紹及手機／桌面圖片比例、字體與間距。先確認後台可改的 CSS、案主是否供圖文及修改輪次。若限定一頁、控制在 8–10 小時，約 NT$1,000–1,250／小時，未計提案成本。11/25 原頁仍顯示搶先提案，須登入並有 TaskerGo 額度。該案最低額度及提案截止未核實。",
+      "url": "https://www.tasker.com.tw/cases/TK26112508VUEL06",
+      "priority": 2,
+      "type": "Project",
+      "source": "Tasker",
+      "company": "Tasker",
+      "screen": "提案",
+      "region": "台灣可遠端",
+      "verified": "2026-11-25",
+      "expires": 1795741200
+    },
+    {
       "id": "upwork-022124480228803673098",
       "title": "英國網站的桌面與手機 UX 測試",
       "category": "UI／產品",
