@@ -1,11 +1,27 @@
 {
   "jobs": [
     {
+      "id": "upwork-022126202079384891984",
+      "title": "3D 列印產品建模",
+      "category": "3D／CAD",
+      "pay": "US$100／案",
+      "note": "Upwork 原案列全球遠端、一次性、固定價 US$100。案主要求依簡單產品構想製作可列印模型，提案附既有相關作品。11/28 原頁顯示 20–50 份提案、0 人面試，未公布件數、修改次數及截止。US$100 以一件簡單零件、一次小改、約 2–2.5 小時為報價前提。保守扣 15% 服務費後約 US$34–42.50／小時，另計 Connects。登入後核對是否仍能投及所需 Connects，再依尺寸與交付格式決定。",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Product-Design-for-Printing_~022126202079384891984/",
+      "priority": 2,
+      "type": "Project",
+      "source": "Upwork",
+      "company": "Upwork",
+      "screen": "提案／附既有作品",
+      "region": "全球遠端",
+      "verified": "2026-11-28",
+      "expires": 1796000400
+    },
+    {
       "id": "tasker-TK26112704GOKT50",
       "title": "部署現成 Python 自動化服務",
       "category": "前端／軟體",
       "pay": "NT$2,000／案",
-      "note": "案主說明可遠端，有現成 Python 程式、Dockerfile、Render Blueprint 和中文手冊。協助部署到案主私人 GitHub 與 Render、串 Supabase、Make 和 LINE 並驗收。完整需求須登入，先確認帳號、測試資料及驗收步驟皆備妥，只在估計 1.5–2 小時可完成時接，約 NT$1,000–1,333／小時，未計平台成本。11/27 原頁仍顯示搶先提案，須有 TaskerGo；實際額度和截止未公開。",
+      "note": "案主說明可遠端，有現成 Python 程式、Dockerfile、Render Blueprint 和中文手冊。協助部署到案主私人 GitHub 與 Render、串 Supabase、Make 和 LINE 並驗收。完整需求須登入，先確認帳號、測試資料及驗收步驟皆備妥，只在估計 1.5–2 小時可完成時接，約 NT$1,000–1,333／小時，未計平台成本。11/28 原頁仍顯示搶先提案，須有 TaskerGo；實際額度和截止未公開。",
       "url": "https://www.tasker.com.tw/cases/TK26112704GOKT50",
       "priority": 1,
       "type": "Project",
@@ -13,8 +29,8 @@
       "company": "Tasker",
       "screen": "提案",
       "region": "台灣可遠端",
-      "verified": "2026-11-27",
-      "expires": 1795856400
+      "verified": "2026-11-28",
+      "expires": 1796000400
     },
     {
       "id": "upwork-022126000653775195962",
@@ -69,7 +85,7 @@
       "title": "三支綜藝風 Reels 剪輯",
       "category": "影片／音訊",
       "pay": "NT$8,000／三支",
-      "note": "案主供分類素材與風格參考，剪三支各約 90 秒的 Reels，交期一週內。可先確認素材總長、字幕規格及修改輪次。若能控制在 7–9 小時，案款約 NT$889–1,143／小時，未計提案成本。11/27 原頁仍顯示搶先提案，須登入並有 TaskerGo 額度。該案最低額度及提案截止未核實，一週是交件要求。",
+      "note": "案主供分類素材與風格參考，剪三支各約 90 秒的 Reels，交期一週內。可先確認素材總長、字幕規格及修改輪次。若能控制在 7–9 小時，案款約 NT$889–1,143／小時，未計提案成本。11/28 原頁顯示可免費提案，後續洽談需 TaskerGo。原頁未公開提案截止，一週是交件要求。",
       "url": "https://www.tasker.com.tw/cases/TK26112422CVNV56",
       "priority": 1,
       "type": "Project",
@@ -77,8 +93,8 @@
       "company": "Tasker",
       "screen": "提案",
       "region": "台灣可遠端",
-      "verified": "2026-11-27",
-      "expires": 1795856400
+      "verified": "2026-11-28",
+      "expires": 1796000400
     },
     {
       "id": "tasker-TK26112508VUEL06",
